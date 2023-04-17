@@ -62,16 +62,16 @@ public enum Translation {
 
             switch (prefix.charAt(0)) {
                 case 'b':
-                    return suffix + prefix + "ark";
+                    return suffix + prefix + "bark";
                 case 'g':
                     return suffix + prefix + "rrrowl";
                 case 'r':
                     return suffix + prefix + "rruf";
                 case 'w':
-                    if (prefix.length() > 1 && prefix.charAt(1) == 'o') {
+                    if (suffix.charAt(0) == 'o') {
                         return suffix + prefix + "oofWoof";
                     } else {
-                    return suffix + prefix.substring(1) + "oof";
+                    return suffix + prefix + "oof";
                     }
                 default:
                     return suffix + prefix + "ay";
