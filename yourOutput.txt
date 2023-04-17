@@ -1,0 +1,39 @@
+[literatureStats.Runner]:	jdkAcceptable()	Checking the JDK version
+[literatureStats.Runner]:	jdkAcceptable()	TRUE
+[literatureStats.Runner]:	main()	Preliminary checks passed
+[literatureStats.Runner]:	extraChecksPassed()	running extra checks
+[literatureStats.Runner]:	argsLengthOK()	Checking 1 is an acceptable number of command-line arguments
+[literatureStats.Runner]:	argsLengthOK()	TRUE
+[literatureStats.Runner]:	filesOK()	checking files [input/macbeth.txt]
+[literatureStats.Runner]:	fileOK()	checking file "input/macbeth.txt"
+[literatureStats.Runner]:	fileOK()	TRUE
+[literatureStats.Runner]:	filesOK()	TRUE
+[literatureStats.Runner]:	main()	Extra checks passed
+
+Experiment 1: treat file as normal
+Phase 1.1: top words translated into dog
+the	->	ethay
+and	->	anday
+of	->	ofay
+Phase 1.2: top words with their frequency ranked
+ 919	the
+ 638	and
+ 482	of
+Phase 1.3: top words with their frequency and dog translation
+ 919	the	->	ethay
+ 638	and	->	anday
+ 482	of	->	ofay
+
+Experiment 2: treat file as Project Gutenberg
+Phase 1.1: top words translated into dog
+the	->	ethay
+and	->	anday
+to	->	otay
+Phase 2.2: top words with their frequency ranked
+ 730	the
+ 571	and
+ 384	to
+Phase 2.3: top words with their frequency and dog translation
+ 730	the	->	ethay
+ 571	and	->	anday
+ 384	to	->	otay

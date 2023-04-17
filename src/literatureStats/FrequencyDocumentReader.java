@@ -75,11 +75,12 @@ public class FrequencyDocumentReader {
             while ( sc.hasNextLine() ) {
                 String line = sc.nextLine();
 
-                if (line.contains(config.START_MARKER)) {
+                if (config.START_MARKER == null && config.STOP_MARKER == null) {
+                    started = true;
+                } else if (line.contains(config.START_MARKER)) {
                     started = true;
                     continue;
-                }
-                else if (line.contains(config.STOP_MARKER)) {
+                } else if (line.contains(config.STOP_MARKER)) {
                     break;
                 }
 
@@ -113,6 +114,6 @@ public class FrequencyDocumentReader {
         } catch ( FileNotFoundException e ) {
             throw new RuntimeException(e);
         }
-        return null;
+        return words;
     }
 }
